@@ -1,0 +1,179 @@
+{
+  "project_name": "BLT Honda Special Service Landing Page",
+  "theme": "Dark Automotive Tactical Luxury",
+  "emotional_archetype": "THE PERFORMANCE PRO (Elite Automotive Precision)",
+  "color_palette": {
+    "background_main": "#070709",
+    "background_secondary": "#0E0F14",
+    "background_card": "#14151C",
+    "background_card_hover": "#1C1D26",
+    "accent_primary": "#CC0000",
+    "accent_primary_hover": "#E60000",
+    "accent_glow": "rgba(204, 0, 0, 0.35)",
+    "text_primary": "#F4F4F6",
+    "text_secondary": "#9CA3AF",
+    "text_muted": "#6B7280",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(204, 0, 0, 0.4)",
+    "glass_background": "rgba(14, 15, 20, 0.75)",
+    "glass_border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Montserrat, Barlow Condensed, sans-serif",
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold uppercase tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-bold tracking-tight",
+      "subheading": "text-base sm:text-lg text-gray-400 font-normal"
+    },
+    "body": {
+      "font_family": "DM Sans, Inter, sans-serif",
+      "body_text": "text-sm sm:text-base text-gray-300 leading-relaxed",
+      "label_overline": "text-xs font-semibold uppercase tracking-[0.2em] text-[#CC0000]"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 lg:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto",
+    "container_max_width": "max-w-7xl",
+    "grid_gap": "gap-6 sm:gap-8",
+    "bento_strategy": "MODE A: Asymmetric & Dense Automotive Cards with tight structural borders"
+  },
+  "components_structure": {
+    "navbar": {
+      "type": "Sticky Glassmorphism Header",
+      "styling": "sticky top-0 z-50 backdrop-blur-xl bg-[#070709]/80 border-b border-white/10 transition-all duration-300",
+      "logo": "BLT Honda Logo SVG mark with sharp Honda Red accents",
+      "links": [
+        { "name": "Ana Sayfa", "href": "#hero" },
+        { "name": "Hizmetlerimiz", "href": "#services" },
+        { "name": "Belgelerimiz", "href": "#certificates" },
+        { "name": "İletişim", "href": "#contact" }
+      ],
+      "cta_dropdown": {
+        "button_text": "Randevu Al",
+        "button_styling": "bg-[#CC0000] hover:bg-[#E60000] text-white font-semibold px-5 py-2.5 rounded-md transition-all shadow-lg shadow-[#CC0000]/25 hover:shadow-[#CC0000]/40 flex items-center gap-2",
+        "options": [
+          { "label": "WhatsApp'tan Yaz", "action": "https://wa.me/905362441130?text=Merhaba,%20BLT%20Honda%20servis%20randevusu%20almak%20istiyorum.", "icon": "MessageSquare" },
+          { "label": "Hemen Ara", "action": "tel:05362441130", "icon": "PhoneCall" },
+          { "label": "İletişim Bölümüne Git", "action": "#contact", "icon": "MapPin" }
+        ]
+      }
+    },
+    "hero": {
+      "title": "Honda'nız İçin Uzman Dokunuş",
+      "description": "Samsun'da Honda tutkusu ve Japon mühendisliği standartlarında profesyonel özel servis. Orijinal ekipman, bilgisayarlı arıza tespiti ve alanında uzman usta kadrosuyla aracınız güvende.",
+      "ctas": [
+        { "text": "Hizmetlerimizi İnceleyin", "href": "#services", "variant": "primary" },
+        { "text": "WhatsApp'tan Ulaşın", "href": "https://wa.me/905362441130", "variant": "whatsapp" }
+      ],
+      "background_image": "https://images.unsplash.com/photo-1705357311583-2aedfbe6302d?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "overlay": "bg-gradient-to-r from-[#070709] via-[#070709]/80 to-transparent opacity-90",
+      "kinetic_elements": "Masked line reveal title effect, floating engine spec badge, performance status indicators"
+    },
+    "services_section": {
+      "section_id": "services",
+      "title": "Uzmanlık Alanlarımız",
+      "subtitle": "Honda standartlarında, son teknoloji ekipmanlar ile periyodik bakım ve onarım hizmetleri.",
+      "cards": [
+        {
+          "id": "periodic-maintenance",
+          "title": "Periyodik Bakım & Yağ Değişimi",
+          "description": "Honda orijinal filtreler ve üretici onaylı sentetik motor yağları ile motorunuzun ömrünü uzatıyoruz.",
+          "icon": "Wrench"
+        },
+        {
+          "id": "engine-transmission",
+          "title": "Motor & Şanzıman Revizyonu",
+          "description": "VTEC ve i-MMD hibrit sistemlerinde derinlemesine mekanik teşhis, rekabete dayalı yüksek performans bakımı.",
+          "icon": "Cpu"
+        },
+        {
+          "id": "brake-suspension",
+          "title": "Fren & Süspansiyon Sistemleri",
+          "description": "Orijinal fren balatası, disk değişimi, rot-balans ve süspansiyon kontrolleri ile maks yol tutuşu.",
+          "icon": "ShieldCheck"
+        },
+        {
+          "id": "diagnostics",
+          "title": "Bilgisayarlı Diyagnostik Teşhis",
+          "description": "Honda HDS (Honda Diagnostic System) yetkili cihazları ile arıza tespiti ve yazılım güncellemeleri.",
+          "icon": "Activity"
+        },
+        {
+          "id": "air-conditioning",
+          "title": "Klima & İklimlendirme Bakımı",
+          "description": "Gaz dolumu, bakteri temizliği, polen filtresi değişimi ve klima kompresörü kontrolü.",
+          "icon": "Wind"
+        },
+        {
+          "id": "spare-parts",
+          "title": "Orijinal Honda Yedek Parça",
+          "description": "%100 orijinal yedek parça temini ve 1 yıl garantili servis işçiliği desteği.",
+          "icon": "Layers"
+        }
+      ],
+      "card_styling": "bg-[#14151C] border border-white/10 rounded-xl p-8 hover:-translate-y-2 hover:border-[#CC0000]/50 hover:shadow-xl hover:shadow-[#CC0000]/10 transition-all duration-300"
+    },
+    "instagram_feed": {
+      "title": "Instagram Akışımız",
+      "handle": "@blthonda55",
+      "url": "https://instagram.com/blthonda55",
+      "grid_layout": "grid grid-cols-2 md:grid-cols-4 gap-4",
+      "items": 8,
+      "images": [
+        "https://images.unsplash.com/photo-1705357311583-2aedfbe6302d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1619252351330-cc235a22a1c7?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1632823471565-1ecf94f8799a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1632823639409-ce060d5a54cc?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1632823471799-c3812077da2d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1619252350908-140f8918b3b9?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1786490001670-b2f1009030e2?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1632823471808-08b572e7381c?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ]
+    },
+    "certificates_gallery": {
+      "section_id": "certificates",
+      "title": "Honda Uzmanlık Belgelerimiz",
+      "subtitle": "Yılların tecrübesi ve sertifikalı Honda teknisyen eğitimlerimiz ile kalite güvencesi.",
+      "type": "Infinite Editorial Marquee",
+      "items": [
+        { "title": "Honda Sertifikalı Master Teknisyen Belgesi", "code": "HMC-2022-984" },
+        { "title": "VTEC & İ-VTEC Motor Uzmanlık Sertifikası", "code": "VT-EX-5501" },
+        { "title": "Honda Diagnostic Systems (HDS) Kalibrasyon Yetki Belgesi", "code": "HDS-CERT-44" },
+        { "title": "Hibrit & Elektrikli Honda Araç Güvenlik Sertifikası", "code": "HEV-SAFE-2023" },
+        { "title": "Otomatik & CVT Şanzıman Revizyon Belgesi", "code": "CVT-REV-88" },
+        { "title": "TSE HYB 12047 Otomotiv Servis Kalite Standardı", "code": "TSE-12047-SAMSUN" }
+      ]
+    },
+    "contact_and_map": {
+      "section_id": "contact",
+      "address": "Toybelen Sanayi Sitesi, 9. Blok No: 6, İlkadım / Samsun",
+      "phone": "0536 244 11 30",
+      "phone_formatted": "+90 536 244 11 30",
+      "working_hours": "Pazartesi - Cumartesi: 08:30 - 18:30 (Pazar Kapalı)",
+      "google_maps_iframe_src": "https://maps.google.com/maps?q=Toybelen%20Sanayi%20Sitesi%20Samsun&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    "footer": {
+      "brand_name": "BLT Honda Özel Servis",
+      "tagline": "Samsun'da Honda tutkunlarının ilk adresi.",
+      "social_links": [
+        { "platform": "Instagram", "url": "https://instagram.com/blthonda55", "icon": "Instagram" },
+        { "platform": "Facebook", "url": "https://facebook.com", "icon": "Facebook" },
+        { "platform": "YouTube", "url": "https://youtube.com", "icon": "Youtube" }
+      ],
+      "copyright": "© 2026 BLT Honda Samsun. Tüm hakları saklıdır."
+    }
+  },
+  "testing_attributes": {
+    "data_testid_rules": "All interactive elements (buttons, links, inputs, dropdowns, cards) must include data-testid attributes in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Follow the exact dark luxury automotive styling specified in color_palette and typography.",
+    "Implement the sticky backdrop-blur navigation with the 'Randevu Al' dropdown containing WhatsApp, Phone call, and Smooth scroll options.",
+    "Ensure Lenis smooth scroll effect is integrated.",
+    "Utilize all provided image URLs for Hero, Instagram grid, and section visual enhancements.",
+    "Use lucide-react icons exclusively for all UI elements.",
+    "Ensure responsive behavior: grid-cols-1 on mobile scaling to grid-cols-2 / grid-cols-4 on desktop.",
+    "Every key interactive element MUST carry a descriptive data-testid."
+  ]
+}
